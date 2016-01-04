@@ -1,0 +1,6 @@
+framework module VPPlugin {
+  umbrella header "VPPlugin.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD0CCC5A1BAEE47D008FD9BF /* youget.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0CCC591BAEE47D008FD9BF /* youget.m */; };
+		FD0CCC5F1BAEE8F0008FD9BF /* Inject.js in Resources */ = {isa = PBXBuildFile; fileRef = FD0CCC5E1BAEE8F0008FD9BF /* Inject.js */; };
+		FD5984931BB5E98F001E0B17 /* VPPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5984921BB5E98F001E0B17 /* VPPlugin.framework */; };
+		FD5984941BB5E98F001E0B17 /* VPPlugin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD5984921BB5E98F001E0B17 /* VPPlugin.framework */; };
+		FD5984951BB5E9D0001E0B17 /* VPPlugin.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD5984921BB5E98F001E0B17 /* VPPlugin.framework */; };
+		FDE74C0B1C39A44A00EF2993 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDE74C091C39A44A00EF2993 /* Info.plist */; };
+		FDE74C0E1C39A53900EF2993 /* you-get.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FDE74C0D1C39A53900EF2993 /* you-get.bundle */; };
+		FDE74C0F1C39A56900EF2993 /* vp_youget_test.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE74C0A1C39A44A00EF2993 /* vp_youget_test.m */; };
+		FDE74C101C39AA5E00EF2993 /* you-get.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FDE74C0D1C39A53900EF2993 /* you-get.bundle */; };
+		FDE74C121C39AC2E00EF2993 /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE74C111C39AC2E00EF2993 /* Settings.xib */; };
+		FDFE291B1BCA1B5200B7C307 /* youget.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0CCC591BAEE47D008FD9BF /* youget.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD59848B1BB5E48E001E0B17 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				FD5984951BB5E9D0001E0B17 /* VPPlugin.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD0CCC591BAEE47D008FD9BF /* youget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = youget.m; sourceTree = "<group>"; };
+		FD0CCC5B1BAEE488008FD9BF /* youget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = youget.h; sourceTree = "<group>"; };
+		FD0CCC5E1BAEE8F0008FD9BF /* Inject.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Inject.js; sourceTree = "<group>"; };
+		FD47B9E51BAECBDE00BAF397 /* youget.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = youget.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD47B9E81BAECBDE00BAF397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD5984811BB5E2AE001E0B17 /* vp_youget.test.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vp_youget.test.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5984921BB5E98F001E0B17 /* VPPlugin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VPPlugin.framework; sourceTree = SOURCE_ROOT; };
+		FDE74C091C39A44A00EF2993 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = vp_youget.test/Info.plist; sourceTree = SOURCE_ROOT; };
+		FDE74C0A1C39A44A00EF2993 /* vp_youget_test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = vp_youget_test.m; path = vp_youget.test/vp_youget_test.m; sourceTree = SOURCE_ROOT; };
+		FDE74C0D1C39A53900EF2993 /* you-get.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "you-get.bundle"; sourceTree = SOURCE_ROOT; };
+		FDE74C111C39AC2E00EF2993 /* Settings.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Settings.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD47B9E21BAECBDE00BAF397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5984931BB5E98F001E0B17 /* VPPlugin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD59847E1BB5E2AE001E0B17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD5984941BB5E98F001E0B17 /* VPPlugin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD47B9DC1BAECBDE00BAF397 = {
+			isa = PBXGroup;
+			children = (
+				FD47B9E71BAECBDE00BAF397 /* plugin */,
+				FD5984821BB5E2AE001E0B17 /* vp.youget.test */,
+				FD47B9E61BAECBDE00BAF397 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD47B9E61BAECBDE00BAF397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD47B9E51BAECBDE00BAF397 /* youget.bundle */,
+				FD5984811BB5E2AE001E0B17 /* vp_youget.test.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD47B9E71BAECBDE00BAF397 /* plugin */ = {
+			isa = PBXGroup;
+			children = (
+				FDE74C0D1C39A53900EF2993 /* you-get.bundle */,
+				FD5984921BB5E98F001E0B17 /* VPPlugin.framework */,
+				FD47B9E81BAECBDE00BAF397 /* Info.plist */,
+				FD0CCC5B1BAEE488008FD9BF /* youget.h */,
+				FD0CCC591BAEE47D008FD9BF /* youget.m */,
+				FD0CCC5E1BAEE8F0008FD9BF /* Inject.js */,
+				FDE74C111C39AC2E00EF2993 /* Settings.xib */,
+			);
+			path = plugin;
+			sourceTree = "<group>";
+		};
+		FD5984821BB5E2AE001E0B17 /* vp.youget.test */ = {
+			isa = PBXGroup;
+			children = (
+				FDE74C091C39A44A00EF2993 /* Info.plist */,
+				FDE74C0A1C39A44A00EF2993 /* vp_youget_test.m */,
+			);
+			path = vp.youget.test;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD47B9E41BAECBDE00BAF397 /* vp_youget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD47B9EB1BAECBDE00BAF397 /* Build configuration list for PBXNativeTarget "vp_youget" */;
+			buildPhases = (
+				FD47B9E11BAECBDE00BAF397 /* Sources */,
+				FD47B9E21BAECBDE00BAF397 /* Frameworks */,
+				FD47B9E31BAECBDE00BAF397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vp_youget;
+			productName = plugin;
+			productReference = FD47B9E51BAECBDE00BAF397 /* youget.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FD5984801BB5E2AE001E0B17 /* vp_youget.test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD5984861BB5E2AE001E0B17 /* Build configuration list for PBXNativeTarget "vp_youget.test" */;
+			buildPhases = (
+				FD59847D1BB5E2AE001E0B17 /* Sources */,
+				FD59847E1BB5E2AE001E0B17 /* Frameworks */,
+				FD59847F1BB5E2AE001E0B17 /* Resources */,
+				FD59848B1BB5E48E001E0B17 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = vp_youget.test;
+			productName = vp.youget.test;
+			productReference = FD5984811BB5E2AE001E0B17 /* vp_youget.test.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD47B9DD1BAECBDE00BAF397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = TYPCN;
+				TargetAttributes = {
+					FD47B9E41BAECBDE00BAF397 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					FD5984801BB5E2AE001E0B17 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = FD47B9E01BAECBDE00BAF397 /* Build configuration list for PBXProject "vp_youget" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD47B9DC1BAECBDE00BAF397;
+			productRefGroup = FD47B9E61BAECBDE00BAF397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD47B9E41BAECBDE00BAF397 /* vp_youget */,
+				FD5984801BB5E2AE001E0B17 /* vp_youget.test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD47B9E31BAECBDE00BAF397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE74C0B1C39A44A00EF2993 /* Info.plist in Resources */,
+				FD0CCC5F1BAEE8F0008FD9BF /* Inject.js in Resources */,
+				FDE74C121C39AC2E00EF2993 /* Settings.xib in Resources */,
+				FDE74C0E1C39A53900EF2993 /* you-get.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD59847F1BB5E2AE001E0B17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE74C101C39AA5E00EF2993 /* you-get.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD47B9E11BAECBDE00BAF397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD0CCC5A1BAEE47D008FD9BF /* youget.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD59847D1BB5E2AE001E0B17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE74C0F1C39A56900EF2993 /* vp_youget_test.m in Sources */,
+				FDFE291B1BCA1B5200B7C307 /* youget.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FD47B9E91BAECBDE00BAF397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FD47B9EA1BAECBDE00BAF397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FD47B9EC1BAECBDE00BAF397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "TYPCN Offical Software Signing #2";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = plugin/Info.plist;
+				INSTALL_PATH = "/Users/typcn/Library/Application Support/com.typcn.youget/Plugins";
+				PRODUCT_BUNDLE_IDENTIFIER = com.typcn.vp.youget;
+				PRODUCT_NAME = youget;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FD47B9ED1BAECBDE00BAF397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "TYPCN Offical Software Signing #2";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = plugin/Info.plist;
+				INSTALL_PATH = "/Users/typcn/Library/Application Support/com.typcn.youget/Plugins";
+				PRODUCT_BUNDLE_IDENTIFIER = com.typcn.vp.youget;
+				PRODUCT_NAME = youget;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		FD5984871BB5E2AE001E0B17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = vp_youget.test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typcn.vp-youget-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD5984881BB5E2AE001E0B17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = vp_youget.test/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.typcn.vp-youget-test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD47B9E01BAECBDE00BAF397 /* Build configuration list for PBXProject "vp_youget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD47B9E91BAECBDE00BAF397 /* Debug */,
+				FD47B9EA1BAECBDE00BAF397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD47B9EB1BAECBDE00BAF397 /* Build configuration list for PBXNativeTarget "vp_youget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD47B9EC1BAECBDE00BAF397 /* Debug */,
+				FD47B9ED1BAECBDE00BAF397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD5984861BB5E2AE001E0B17 /* Build configuration list for PBXNativeTarget "vp_youget.test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5984871BB5E2AE001E0B17 /* Debug */,
+				FD5984881BB5E2AE001E0B17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD47B9DD1BAECBDE00BAF397 /* Project object */;
+}
