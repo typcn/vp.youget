@@ -11,6 +11,8 @@
 @interface youget ()
 
 @property (strong) NSWindowController* settingsPanel;
+@property (weak) IBOutlet NSTextField *paramField;
+@property (weak) IBOutlet NSTextField *exeField;
 
 @end
 
@@ -46,7 +48,13 @@
         
         NSString *path = [[NSBundle bundleForClass:[self class]]
                           pathForResource:@"you-get" ofType:@"bundle"];
-        path = [path stringByAppendingString:@"/Contents/MacOS/you-get"];
+        //path = [path stringByAppendingString:@"/Contents/MacOS/you-get"];
+        
+        NSString *execPath = [[self getExec] stringByReplacingOccurrencesOfString:@"{BundlePath}" withString:path];
+        
+        if(![[NSFileManager defaultManager] fileExistsAtPath:execPath]){
+            return [NSString stringWithFormat:@"You-Get 可执行文件不存在，请检查设置是否正确：\n%@",execPath];
+        }
         
         NSPipe *newPipe = [NSPipe pipe];
         NSFileHandle *readHandle = [newPipe fileHandleForReading];
@@ -56,8 +64,8 @@
         NSTask * unixTask = [[NSTask alloc] init];
         [unixTask setStandardOutput:newPipe];
         [unixTask setStandardError:newPipe];
-        [unixTask setLaunchPath:path];
-        [unixTask setArguments:[NSArray arrayWithObjects:@"-u", eventData , nil]];
+        [unixTask setLaunchPath:execPath];
+        [unixTask setArguments:[self getParam:eventData]];
         [unixTask launch];
         NSDate *terminateDate = [[NSDate date] dateByAddingTimeInterval:15.0];
         while ((unixTask != nil) && ([unixTask isRunning]))   {
@@ -93,7 +101,51 @@
                           pathForResource:@"Settings" ofType:@"nib"];
         settingsPanel =[[NSWindowController alloc] initWithWindowNibPath:path owner:self];
         [settingsPanel showWindow:self];
+        [self.exeField setStringValue:[self getExec]];
+        
+        NSUserDefaults *settingsController = [NSUserDefaults standardUserDefaults];
+        NSString *param = [settingsController objectForKey:@"youget_param"];
+        if(param && [param length] > 0){
+            [self.paramField setStringValue:param];
+        }
     });
     return;
 }
+
+- (IBAction)saveSettings:(id)sender {
+    NSUserDefaults *settingsController = [NSUserDefaults standardUserDefaults];
+    NSString *param = self.paramField.stringValue;
+    NSString *exe = self.exeField.stringValue;
+    if(exe && [exe length] > 4){
+        [settingsController setValue:exe forKey:@"youget_exec"];
+    }
+    if(param && [param length] > 0){
+        [settingsController setValue:param forKey:@"youget_param"];
+    }
+    [settingsPanel close];
+}
+
+- (NSString *)getExec{
+    NSUserDefaults *settingsController = [NSUserDefaults standardUserDefaults];
+    NSString *exe = [settingsController objectForKey:@"youget_exec"];
+    if(exe && [exe length] > 4){
+        return exe;
+    }else{
+        return @"{BundlePath}/Contents/MacOS/you-get";
+    }
+}
+
+- (NSArray *)getParam:(NSString *)url{
+    NSUserDefaults *settingsController = [NSUserDefaults standardUserDefaults];
+    NSString *prm = [settingsController objectForKey:@"youget_param"];
+    if(prm && [prm length] > 0){
+        NSMutableArray *params = [[prm componentsSeparatedByString:@" "] mutableCopy];
+        [params insertObject:@"-u" atIndex:0];
+        [params addObject:url];
+        return params;
+    }else{
+        return [NSArray arrayWithObjects:@"-u", url , nil];
+    }
+}
+
 @end
