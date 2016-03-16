@@ -136,6 +136,7 @@
 }
 
 - (NSArray *)getParam:(NSString *)url{
+    url = [url stringByReplacingOccurrencesOfString:@"acfun.tudou.com" withString:@"www.acfun.tv"];
     NSUserDefaults *settingsController = [NSUserDefaults standardUserDefaults];
     NSString *prm = [settingsController objectForKey:@"youget_param"];
     if(prm && [prm length] > 0){
