@@ -101,6 +101,7 @@
                           pathForResource:@"Settings" ofType:@"nib"];
         settingsPanel =[[NSWindowController alloc] initWithWindowNibPath:path owner:self];
         [settingsPanel showWindow:self];
+        [settingsPanel.window makeKeyAndOrderFront:self];
         [self.exeField setStringValue:[self getExec]];
         
         NSUserDefaults *settingsController = [NSUserDefaults standardUserDefaults];
